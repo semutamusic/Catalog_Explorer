@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Headers-->
+    <style name="header_1">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+    <style name="header_2">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+
+    <!--Content-->
+    <style name="content_1">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+    <style name="content_2">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+    <style name="content_3">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+
+    <!--Buttons-->
+    <style name="button_1">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+    <style name="button_2">
+        <item name="android:textColor">#AA000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:fontFamily">@font/typewriterbold</item>
+    </style>
+</resources>

@@ -1,0 +1,498 @@
+Code,Class,Subclass,Start,End
+AC,General Works,"Collections, Series, Collected Works",1,999
+AE,General Works,Encyclopedias,1,90
+AG,General Works,"Dictionaries, General Reference",2,600
+AI,General Works,Indexes,1,21
+AM,General Works,"Museums, Collectors",1,501
+AP,General Works,Periodicals,1,271
+AS,General Works,"Academies, Learned Societies",1,945
+AY,General Works,"Yearbooks, Almanacs, Directories",10,2001
+AZ,General Works,History of Scholarship and Learning,20,999
+B,"Philosophy, Psychology, Religion","Philosophy (General)",1,5802
+BC,"Philosophy, Psychology, Religion",Logic,1,199
+BD,"Philosophy, Psychology, Religion",Speculative Philosophy,10,701
+BF,"Philosophy, Psychology, Religion",Psychology,1,2055
+BH,"Philosophy, Psychology, Religion",Aesthetics,1,301
+BJ,"Philosophy, Psychology, Religion",Ethics,1,2195
+BL,"Philosophy, Psychology, Religion","Religions, Mythology, Rationalism",1,2790
+BM,"Philosophy, Psychology, Religion",Judaism,1,990
+BP,"Philosophy, Psychology, Religion","Islam, Bahaism, Theosophy",1,610
+BQ,"Philosophy, Psychology, Religion",Buddhism,1,9800
+BR,"Philosophy, Psychology, Religion",Christianity,1,1725
+BS,"Philosophy, Psychology, Religion",The Bible,1,2970
+BT,"Philosophy, Psychology, Religion",Doctrinal Theology,10,1480
+BV,"Philosophy, Psychology, Religion",Practical Theology,1,5099
+BX,"Philosophy, Psychology, Religion",Christian Denominations,1,9999
+C,Historical Sciences,"Historical Sciences (General)",1,51
+CB,Historical Sciences,History of Civilization,3,482
+CC,Historical Sciences,Archaeology,1,960
+CD,Historical Sciences,"Diplomatics, Archives, Seals",1,6471
+CE,Historical Sciences,"Technical Chronology, Calendar",1,97
+CJ,Historical Sciences,Numismatics,1,6661
+CN,Historical Sciences,"Inscriptions, Epigraphy",1,1355
+CR,Historical Sciences,Heraldry,1,6305
+CS,Historical Sciences,Genealogy,1,3090
+CT,Historical Sciences,Biography,21,9999
+D,World History,"History (General)",1,2027
+DA,World History,Great Britain,1,995
+DAW,World History,Central Europe,1001,1051
+DB,World History,"Austria, Liechtenstein, Hungary, Czechoslovakia",1,3150
+DC,World History,"France, Andorra, Monaco",1,947
+DD,World History,Germany,1,905
+DE,World History,Greco-Roman World,1,100
+DF,World History,Greece,10,951
+DG,World History,"Italy, Malta",11,999
+DH,World History,"Low Countries, Benelux Countries",1,925
+DJ,World History,Netherlands,1,500
+DJK,World History,"Eastern Europe (General)",1,77
+DK,World History,"Russia, Soviet Union, Poland",1,4800
+DL,World History,"Northern Europe, Scandinavia",1,1180
+DP,World History,"Spain, Portugal",1,900
+DQ,World History,Switzerland,1,851
+DR,World History,Balkan Peninsula,1,2285
+DS,World History,Asia,1,937
+DT,World History,Africa,1,3415
+DU,World History,"Oceania (South Seas)",1,950
+DX,World History,Romanies,101,301
+E,American History,"America, United States",11,904
+F,American History,"British, Dutch, French, Latin, and Spanish America",1,1170
+G,"Geography, Recreation","Geography (General)",1,9980
+GA,"Geography, Recreation","Mathematical Geography, Cartography",1,1776
+GB,"Geography, Recreation",Physical Geography,3,5030
+GC,"Geography, Recreation",Oceanography,1,1581
+GE,"Geography, Recreation",Environmental Sciences,1,350
+GF,"Geography, Recreation",Human Ecology,1,900
+GN,"Geography, Recreation",Anthropology,1,890
+GR,"Geography, Recreation",Folklore,1,950
+GT,"Geography, Recreation","Manners and Customs (General)",1,7070
+GV,"Geography, Recreation","Recreation, Leisure",1,1860
+H,Social Sciences,"Social Sciences (General)",1,99
+HA,Social Sciences,Statistics,1,4737
+HB,Social Sciences,"Economic Theory, Demography",1,3840
+HC,Social Sciences,Economic History and Conditions,10,1085
+HD,Social Sciences,"Industries, Land Use, Labor",28,9999
+HE,Social Sciences,Transportation and Communications,1,9990
+HF,Social Sciences,Commerce,1,6182
+HG,Social Sciences,Finance,1,9999
+HJ,Social Sciences,Public Finance,9,9940
+HM,Social Sciences,"Sociology (General)",1,1281
+HN,Social Sciences,"Social History, Conditions, Problems, Reform",1,995
+HQ,Social Sciences,"The Family, Marriage, Women",1,2044
+HS,Social Sciences,"Societies: Secret, Benevolent, Etc.",1,3371
+HT,Social Sciences,"Communities, Classes, Races",51,1595
+HV,Social Sciences,"Social Pathology, Public Warfare, Criminology",1,9960
+HX,Social Sciences,"Socialism, Communism, Anarchism",1,970
+J,Political Sciences,General Legislative and Executive Papers,1,981
+JA,Political Sciences,"Political Sciences (General)",1,92
+JC,Political Sciences,Political Theory,11,605
+JF,Political Sciences,"Political Institutions, Administration",20,2112
+JJ,Political Sciences,"Political Institutions, Administration (North America)",1000,1019
+JK,Political Sciences,"Political Institutions, Administration (United States)",1,9993
+JL,Political Sciences,"Political Institutions, Administration (Canada, Etc.)",1,3899
+JN,Political Sciences,"Political Institutions, Administration (Europe)",1,9689
+JQ,Political Sciences,"Political Institutions, Administration (Asia, Africa, Etc.)",21,6651
+JS,Political Sciences,"Local Government, Municipal Government",39,8500
+JV,Political Sciences,"Colonies and Colonization, Immigration",1,9480
+JX,Political Sciences,International Law,1,6650
+JZ,Political Sciences,International Relations,5,6530
+K,Law,"Law in General, Jurisprudence",1,7720
+KB,Law,"Religious Law in General, Jurisprudence",1,4855
+KBM,Law,Jewish Law,1,4855
+KBP,Law,Islamic Law,1,4860
+KBR,Law,History of Canon Law,2,4090
+KBU,Law,"Law of the Roman Catholic Church, The Holy See",2,4820
+KD,Law,"United Kingdom, Ireland",51,9500
+KDC,Law,Scotland,51,990
+KDE,Law,Northern Ireland,21,580
+KDG,Law,Isle of Man. Channel Islands,26,540
+KDK,Law,"Ireland (Eire)",21,1950
+KDZ,Law,"America, North America",1,4999
+KE,Law,Canada,1,9450
+KEA,Law,Alberta,1,599
+KEB,Law,British Columbia,1,599
+KEM,Law,Manitoba,1,599
+KEN,Law,Northwest Territories,1,7999
+KEO,Law,Ontario,1,1199
+KEP,Law,Prince Edward Island,1,599
+KEQ,Law,Quebec,1,1199
+KES,Law,Saskatchewan,1,599
+KEY,Law,Yukon Territory,1,599
+KEZ,Law,"Canada, Individual Cities",1,9999
+KF,Law,United States,1,9827
+KFA,Law,"US States (A)",1,4199
+KFC,Law,"US States (C)",1,4199
+KFD,Law,"US States (D)",1,1799
+KFF,Law,Florida,1,599
+KFG,Law,Georgia,1,599
+KFH,Law,Hawaii,1,599
+KFI,Law,"US States (I)",1,4799
+KFK,Law,"US States (K)",1,1799
+KFL,Law,Louisiana,1,599
+KFM,Law,"US States (M)",1,9599
+KFN,Law,"US States (N)",1,9199
+KFO,Law,"US States (O)",1,2999
+KFP,Law,Pennsylvania,1,599
+KFR,Law,Rhode Island,1,599
+KFS,Law,"US States (S)",1801,3599
+KFT,Law,"US States (T)",1,1799
+KFU,Law,Utah,1,599
+KFV,Law,"US States (V)",1,2999
+KFW,Law,"US States (W)",1,4799
+KFX,Law,"United States, Individual Cities",1,9999
+KFZ,Law,"Northwest Territories, Confederate States",1801,9199
+KG,Law,Latin America,1,3999
+KGA,Law,Belize,1,9000
+KGB,Law,Costa Rica,1,9000
+KGC,Law,El Salvador,1,9800
+KGD,Law,Guatemala,1,9990
+KGE,Law,Honduras,1,9990
+KGF,Law,Mexico,1,9900
+KGG,Law,Nicaragua,1,9800
+KGH,Law,Panama,1,9499
+KGJ,Law,"General, Anguilla",1,7499
+KGK,Law,"Antigua, Barbuda, Aruba",1,1499
+KGL,Law,"Bahamas, Barbados, Bonaire, British Islands",1,6499
+KGM,Law,Cayman Islands,1,499
+KGN,Law,Cuba,1,9800
+KGP,Law,Curaçao,1,2499
+KGQ,Law,Dominican Republic,1,9800
+KGR,Law,"Dutch, French Islands, Grenada, Guadeloupe",1,5499
+KGS,Law,Haiti,1,9000
+KGT,Law,"Jamaica, Martinique, Montserrat",1,2499
+KGU,Law,Navassa Islands,1,499
+KGV,Law,Puerto Rico,1,8200
+KGW,Law,"Saint Christopher, Saint Lucia, Etc.",1,8499
+KGX,Law,"Trinidad, Tobago",1,499
+KGY,Law,"Turks, Caicos Islands",1,499
+KGZ,Law,Virgin Islands of the United States,1,499
+KH,Law,South America,1,999
+KHA,Law,Argentina,1,9800
+KHC,Law,Bolivia,1,8200
+KHD,Law,Brazil,1,9900
+KHF,Law,Chile,1,9800
+KHH,Law,Colombia,1,9900
+KHK,Law,Ecuador,1,9990
+KHL,Law,Falkland Islands,1,9000
+KHM,Law,French Guiana,1,9000
+KHN,Law,Guyana,1,9000
+KHP,Law,Paraguay,1,9700
+KHQ,Law,Peru,1,9800
+KHS,Law,Surinam,1,9000
+KHU,Law,Uruguay,1,9800
+KHW,Law,Venezuela,1,9900
+KJ,Law,Europe,2,1040
+KJA,Law,Roman Law,2,3660
+KJC,Law,"Europe, Regional Comparative, Uniform Law",2,9799
+KJE,Law,"Europe, Regional Organization, Integration",5,7975
+KJG,Law,Albania,1,4999
+KJH,Law,Andorra,1,499
+KJJ,Law,Austria,1,4999
+KJK,Law,Belgium,1,4999
+KJM,Law,Bulgaria,1,4999
+KJN,Law,Cyprus,1,499
+KJP,Law,Czechoslovakia,1,4999
+KJR,Law,Denmark,1,4999
+KJS,Law,Estonia,1,4985
+KJT,Law,Finland,1,4999
+KJV,Law,"France, National Laws",2,9158
+KJW,Law,"France, Individual Regions, Cities",51,9600
+KK,Law,"Germany, West Germany",2,9799
+KKA,Law,East Germany,7,9796
+KKE,Law,Greece,1,4999
+KKF,Law,Hungary,1,4999
+KKG,Law,Iceland,1,499
+KKH,Law,Italy,1,4999
+KKI,Law,Latvia,1,4890
+KKJ,Law,Liechtenstein,1,9890
+KKK,Law,"Luxembourg, Malta",1,1499
+KKL,Law,Monaco,1,499
+KKM,Law,Netherlands,1,4999
+KKN,Law,Norway,1,4999
+KKP,Law,Poland,1,4999
+KKQ,Law,Portugal,1,4999
+KKR,Law,Romania,1,4999
+KKS,Law,San Marino,1,499
+KKT,Law,Spain,1,4999
+KKV,Law,Sweden,1,4999
+KKW,Law,Switzerland,1,4999
+KKX,Law,Turkey,1,4999
+KKY,Law,Ukraine,1,4999
+KKZ,Law,Yugoslavia,1,4999
+KL,Law,"Asia, Eurasia, Africa, Pacific Area (Historical)",2,6199
+KLA,Law,"Russia, Soviet Union",1,9999
+KLB,Law,Russia (Federation),1,6499
+KLD,Law,Armenian S.S.R.,1,490
+KLE,Law,Azerbaijan,1,490
+KLF,Law,Belarus (Republic),1,490
+KLH,Law,Georgia (Republic),1,490
+KLM,Law,Moldova,1,490
+KLN,Law,Russian S.F.S.R.,1,489
+KLP,Law,"Ukraine, Z.S.F.S.R",1,9499
+KLQ,Law,B.N.S.R,1,499
+KLR,Law,"Kazakhstan, K.S.S.R.",1,1499
+KLS,Law,Kyrgyzstan,1,490
+KLT,Law,Tadjikistan,1,490
+KLV,Law,Turkmenistan,1,490
+KLW,Law,Uzbekistan,1,490
+KM,Law,Asia,1,999
+KMC,Law,"Middle East, Regional Comparative, Uniform Law",1,799
+KME,Law,"Middle East, Regional Organization, Integration",10,799
+KMF,Law,"Armenia (Republic), Bahrain",1,1490
+KMG,Law,Gaza,1,489
+KMH,Law,Iran,1,4990
+KMJ,Law,Iraq,1,4990
+KMK,Law,Israel,1,4990
+KML,Law,Jerusalem,1,490
+KMM,Law,"Jordan, West Bank",1,994
+KMN,Law,Kuwait,1,499
+KMP,Law,Lebanon,1,490
+KMQ,Law,"Oman, Palestine",1,1499
+KMS,Law,Qatar,1,490
+KMT,Law,Saudi Arabia,1,4990
+KMU,Law,Syria,1,490
+KMV,Law,United Arab Emirates,1,9870
+KMX,Law,Yemen,1001,1526
+KMY,Law,Yemen (People's Democratic Republic),1,489
+KNC,Law,"South Asia, Regional Comparative, Uniform Law",1,999
+KNE,Law,"South Asia, Regional Organization, Integration",150,499
+KNF,Law,Afghanistan,1,4990
+KNG,Law,Bangladesh,1,4990
+KNH,Law,Bhutan,1,490
+KNK,Law,Brunei,1,490
+KNL,Law,Burma,1,4990
+KNM,Law,Cambodia,1,4990
+KNN,Law,China,1,9000
+KNP,Law,"China (Republic), Taiwan",1,599
+KNQ,Law,China (People's Republic),1,9665
+KNR,Law,Hong Kong,1,489
+KNS,Law,India,1,4999
+KNV,Law,French Indochina,1,489
+KNW,Law,Indonesia,1,4990
+KNX,Law,Japan,1,4999
+KNY,Law,"Japan, Cities",10,220
+KPA,Law,"Korea, South Korea",1,4990
+KPC,Law,"Democratic People's Republic of Korea, North Korea",1,4990
+KPE,Law,Laos,1,4990
+KPF,Law,Macao,1,489
+KPG,Law,Malaysia,1,9999
+KPH,Law,"Malaysia, Maldives",1,5490
+KPJ,Law,Mongolia,1,490
+KPK,Law,Nepal,1,490
+KPL,Law,Pakistan,1,4990
+KPM,Law,Philippines,1,4990
+KPP,Law,Singapore,1,499
+KPS,Law,Sri Lanka,1,4990
+KPT,Law,Thailand,1,4990
+KPV,Law,Vietnam,1,8094
+KPW,Law,"Vietnam, South Vietnam",1,489
+KQ,Law,Africa,2,9000
+KQC,Law,"Africa, Regional Comparative, Uniform Law",1,999
+KQE,Law,"Africa, Regional Organization, Integration",10,1249
+KQG,Law,Algeria,1,4990
+KQH,Law,Angola,1,4990
+KQJ,Law,Benin,1,490
+KQK,Law,Botswana,1,490
+KQM,Law,British Central Africa Protectorate,1,499
+KQP,Law,"British Indian Ocean Territory, Somaliland, Etc.",1,1499
+KQT,Law,Burkina Faso,1,490
+KQV,Law,Burundi,1,490
+KQW,Law,Cameroon,1,8020
+KQX,Law,Cape Verde,1,490
+KRB,Law,Central African Republic,1,490
+KRC,Law,Chad,1,490
+KRE,Law,Comoros,1,490
+KRG,Law,Congo,1,490
+KRK,Law,Djibouti,1,490
+KRL,Law,East Africa Protectorate,1,499
+KRM,Law,Egypt,1,4990
+KRN,Law,Eritrea,1,499
+KRP,Law,Ethiopia,1,4990
+KRR,Law,French Equatorial Africa,1,499
+KRS,Law,French West Africa,1,499
+KRU,Law,Gabon,1,490
+KRV,Law,Gambia,1,489
+KRW,Law,German East Africa,1,499
+KRX,Law,Ghana,1,4990
+KRY,Law,Gibraltar,1,499
+KSA,Law,Guinea,1,490
+KSC,Law,Guinea-Bissau,1,490
+KSE,Law,"Equatorial Guinea, Ifni",1,699
+KSG,Law,"Italian East Africa, Italian Somaliland",1,1499
+KSH,Law,Ivory Coast,1,4990
+KSK,Law,Kenya,1,4990
+KSL,Law,Lesotho,1,490
+KSN,Law,Liberia,1,490
+KSP,Law,Libya,1,4990
+KSR,Law,Madagascar,1,490
+KSS,Law,Malawi,1,490
+KST,Law,Mali,1,490
+KSU,Law,Mauritania,1,490
+KSV,Law,"Mauritius, Mayotte",1,5490
+KSW,Law,Morocco,1,4990
+KSX,Law,Mozambique,1,4990
+KSY,Law,Namibia,1,4990
+KSZ,Law,Niger,1,490
+KTA,Law,Nigeria,1,9150
+KTC,Law,Réunion,1,499
+KTD,Law,Rwanda,1,490
+KTE,Law,Saint Helena,1,490
+KTF,Law,São Tomé and Principe,1,490
+KTG,Law,Senegal,1,4990
+KTH,Law,Seychelles,1,490
+KTJ,Law,Sierra Leone,1,490
+KTK,Law,Somalia,1,490
+KTL,Law,"South Africa, Republic of",1,9560
+KTN,Law,"Spanish West Africa, Spanish Sahara",1,699
+KTQ,Law,Sudan,1,4990
+KTR,Law,Swaziland,1,490
+KTT,Law,Tanzania,1,9910
+KTU,Law,Togo,1,490
+KTV,Law,Tunisia,1,4990
+KTW,Law,Uganda,1,490
+KTX,Law,Zaire,1,4990
+KTY,Law,"Zambia, Zanzibar",1,1599
+KTZ,Law,Zimbabwe,1,490
+KU,Law,Austrailia,1,4999
+KUN,Law,Norfolk Island,501,3050
+KUQ,Law,New Zealand,1,4990
+KVB,Law,"Pacific Area Jurisdictions, Australia and New Zealand",1,999
+KVC,Law,Other Pacific Area Jurisdictions,1,999
+KVE,Law,"Pacific Area, Regional Organization and Integration",200,349
+KVH,Law,"American Samoa, British Samoa",1,1499
+KVL,Law,Cook Islands,1,489
+KVM,Law,Easter Island,1,489
+KVN,Law,Fiji,1,490
+KVP,Law,French Polynesia,1,1099
+KVQ,Law,Guam,1,490
+KVR,Law,Kiribati,1,490
+KVS,Law,"Marshall Islands, Micronesia, Midway Islands",1,2999
+KVU,Law,"Nauru, Netherlands New Guinea",1,1099
+KVW,Law,New Caledonia,1,490
+KWA,Law,Niue,1,489
+KWC,Law,Northern Mariana Islands,1,490
+KWE,Law,Pacific Islands (Trust Territory),1,490
+KWG,Law,Palau,1,490
+KWH,Law,Papua New Guinea,1,490
+KWL,Law,"Pitcairn Island, Solomon Islands",1,2490
+KWP,Law,Tonga,1,490
+KWQ,Law,Tuvalu,1,490
+KWR,Law,Vanuatu,1,490
+KWT,Law,"Wake Island, Wallis and Futuna Islands",1,2490
+KWW,Law,Western Samoa,1,490
+KZ,Law,Law of Nations,2,6795
+KZA,Law,Law of the Sea,1002,4205
+KZD,Law,"Space Law, Law of Outer Space",1002,6715
+L,Education,Education (General),7,991
+LA,Education,History of Education,5,2396
+LB,Education,Theory and Practice of Education,5,3640
+LC,Education,Special Aspects of Education,8,6691
+LD,Education,Individual Institutions - United States,13,7501
+LE,Education,Individual Institutions - Americas,3,78
+LF,Education,Individual Institutions - Europe,14,5627
+LG,Education,"Individual Institutions - Asia, Africa, Etc.",21,961
+LH,Education,"College and School Magazines, Papers",1,9
+LJ,Education,"Student Fraternities and Societies, United States",3,165
+LT,Education,Textbooks,6,501
+M,Music and Books on Music,Music,1,5000
+ML,Music and Books on Music,Literature on Music,1,3930
+MT,Music and Books on Music,Instruction and Study,1,960
+N,Fine Arts,Visual Arts,1,9211
+NA,Fine Arts,Architecture,1,9428
+NB,Fine Arts,Sculpture,1,1952
+NC,Fine Arts,"Drawing, Design, Illustration",1,1940
+ND,Fine Arts,Painting,25,3416
+NE,Fine Arts,Print Media,1,3002
+NK,Fine Arts,Decorative Arts,1,9990
+NX,Fine Arts,Arts in General,1,820
+P,Language and Literature,"Philology, Linguistics",1,1091
+PA,Language and Literature,"Greek, Latin Language",1,8595
+PB,Language and Literature,"Modern, Celtic Languages",1,3029
+PC,Language and Literature,Romance Languages,1,5498
+PD,Language and Literature,"Germanic, Scandinavian Languages",1,7159
+PE,Language and Literature,English Language,1,3729
+PF,Language and Literature,West Germanic Languages,1,5999
+PG,Language and Literature,"Slavic, Baltic, Albanian Languages",1,9665
+PH,Language and Literature,"Uralic, Basque Languages",1,5490
+PJ,Language and Literature,Oriental Languages,1,9500
+PK,Language and Literature,Indo-Iranian Languages,1,9601
+PL,Language and Literature,"Eastern Asian, African, Oceanic Languages",1,8844
+PM,Language and Literature,"Hyperborean, Indian, and Artificial Languages",1,9021
+PN,Language and Literature,Literature (General),1,6790
+PQ,Language and Literature,"French, Italian, Spanish, Portuguese Literature",1,9999
+PR,Language and Literature,English Literature,1,9680
+PS,Language and Literature,American Literature,1,8599
+PT,Language and Literature,"German, Dutch, Norse, Etc. Literature",1,9999
+PZ,Language and Literature,Fiction and Juveniles Belles Lettres,1,90
+Q,Science,Science (General),1,390
+QA,Science,Mathematics,1,939
+QB,Science,Astronomy,1,991
+QC,Science,Physics,1,999
+QD,Science,Chemistry,1,999
+QE,Science,Geology,1,996
+QH,Science,"Natural History, Biology",1,278
+QK,Science,Botany,1,989
+QL,Science,Zoology,1,991
+QM,Science,Human Anatomy,1,695
+QP,Science,Physiology,1,981
+QR,Science,Microbiology,1,502
+R,Medicine,Medicine (General),5,920
+RA,Medicine,Public Aspects of Medicine,1,1270
+RB,Medicine,Pathology,1,214
+RC,Medicine,Internal Medicine,31,1245
+RD,Medicine,Surgery,1,811
+RE,Medicine,Ophthalmology,1,994
+RF,Medicine,Otorhinolaryngology,1,547
+RG,Medicine,"Gynecology, Obstetrics",1,991
+RJ,Medicine,Pediatrics,1,570
+RK,Medicine,Dentistry,1,715
+RL,Medicine,Dermatology,1,803
+RM,Medicine,"Therapeutics, Pharmacology",1,950
+RS,Medicine,"Pharmacy, Materia Medica",1,441
+RT,Medicine,Nursing,1,120
+RV,Medicine,"Botanic, Thomsonian, Eclectic Medicine",1,431
+RX,Medicine,Homeopathy,1,681
+RZ,Medicine,Other Systems of Medicine,1,999
+S,Agriculture,Agriculture (General),1,972
+SB,Agriculture,Plant Culture,1,1110
+SD,Agriculture,Forestry,1,669
+SF,Agriculture,Animal Culture,1,1100
+SH,Agriculture,"Aquaculture, Fisheries, Angling",1,691
+SK,Agriculture,Hunting Sports,1,664
+T,Technology,Technology (General),1,995
+TA,Technology,"Engineering (General), Civil Engineering",1,2040
+TC,Technology,"Hydraulic Engineering, Ocean Engineering",1,1800
+TD,Technology,"Environmental Technology, Sanitary Engineering",1,1066
+TE,Technology,"Highway Engineering, Roads and Pavements",1,450
+TF,Technology,Railroad Engineering and Operation,1,1620
+TG,Technology,Bridge Engineering,1,470
+TH,Technology,Building Construction,1,9745
+TJ,Technology,Mechanical Engineering and Machinery,1,1570
+TK,Technology,"Electrical Engineering, Electronics, Nuclear Engineering",1,9971
+TL,Technology,"Motor Vehicles, Aeronautics, Astronautics",1,4050
+TN,Technology,"Mining Engineering, Metallurgy",1,997
+TP,Technology,Chemical Technology,1,1185
+TR,Technology,Photography,1,1050
+TS,Technology,Manufactures,1,2301
+TT,Technology,"Handicrafts, Arts and Crafts",1,999
+TX,Technology,Home Economics,1,1110
+U,Military Science,Military Science (General),1,900
+UA,Military Science,"Armies, Organization, Distribution, Military Situation",10,997
+UB,Military Science,Military Administration,1,900
+UC,Military Science,Maintenance and Transportation,10,780
+UD,Military Science,Infantry,1,495
+UE,Military Science,"Cavalry, Armor",1,500
+UF,Military Science,Artillery,1,910
+UG,Military Science,"Military Engineering, Air Forces",1,620
+UH,Military Science,Other Services,20,910
+V,Naval Science,Naval Science (General),1,995
+VA,Naval Science,"Navies, Organization, Distribution, Naval Situation",10,750
+VB,Naval Science,Naval Administration,15,955
+VC,Naval Science,Naval Maintenance,10,580
+VD,Naval Science,Naval Seamen,7,430
+VE,Naval Science,Marines,7,500
+VF,Naval Science,Naval Ordnance,1,580
+VG,Naval Science,Minor Services of Navies,20,2029
+VK,Naval Science,"Navigation, Merchant Marine",1,1661
+VM,Naval Science,"Naval Architecture, Shipbuilding, Marine Engineering",1,989
+Z,"Bibliography, Library Science","Books (General), Writing, Libraries, Etc.",4,8999
+ZA,"Bibliography, Library Science",Information Resources (General),3038,5190
