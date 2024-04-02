@@ -274,7 +274,7 @@
             android:ems="10"
             android:imeOptions="actionDone"
             android:inputType="number"
-            android:maxLength="4"
+            android:maxLength="7"
             android:text="@string/locGen_line2_default"
             android:textAlignment="center"
             android:textAppearance="@style/content_3"

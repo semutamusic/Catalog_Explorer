@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
     TextView helpTitleText, helpText;
     ConstraintLayout helpLayout;
 
+    LOCManager locMan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        locMan = LOCManager.getInstance(this);
 
         helpImage = (ImageView) findViewById(R.id.main_help_image);
 

@@ -24,6 +24,14 @@ class Line{
         whiteout.setVisibility(View.INVISIBLE);
         isLocked = false;
     }
+    public void setLineText(String text){
+        if(!isLocked){
+            line.setText(text);
+        }
+    }
+    public String getLineText(){
+        return line.getText().toString();
+    }
 }
 
 public class RandomLOCGenerator extends AppCompatActivity {
@@ -47,7 +55,6 @@ public class RandomLOCGenerator extends AppCompatActivity {
         //Set up Line array
         for(int i = 0; i < lines.length; i++){
             Line tempLine = new Line();
-            Log.i("Searching for Line", "locGen_line"+(i+1)+"_text, locGen_lineWhiteout"+(i+1)+"_image");
             tempLine.line = findViewById(getResources().getIdentifier("locGen_line"+(i+1)+"_text", "id", getPackageName()));
             tempLine.whiteout = findViewById(getResources().getIdentifier("locGen_lineWhiteout"+(i+1)+"_image", "id", getPackageName()));
             tempLine.unlock();
@@ -59,7 +66,7 @@ public class RandomLOCGenerator extends AppCompatActivity {
                         tempLine.line.setCursorVisible(true);
                     }
                     else{
-                        setLocLabels(lines[0].line.getText().toString());
+                        setLocLabels(lines[0].getLineText());
                         //Hide the keyboard if focus is lost
                         imm.hideSoftInputFromWindow(tempLine.line.getWindowToken(), 0);
                         tempLine.line.setCursorVisible(false);
@@ -72,7 +79,7 @@ public class RandomLOCGenerator extends AppCompatActivity {
         classText = findViewById(R.id.locGen_class_text);
         subclassText = findViewById(R.id.locGen_subclass_text);
 
-        setLocLabels(lines[0].line.getText().toString());
+        setLocLabels(lines[0].getLineText());
 
         //Generate button listener, only generates text for unlocked lines
         generateButton.setOnClickListener(new View.OnClickListener(){
@@ -104,43 +111,23 @@ public class RandomLOCGenerator extends AppCompatActivity {
     //Sets LOC Class and Subclass labels
     public void setLocLabels(String code){
         String lc = locMan.getLOCClass(code);
-        String lsc = locMan.getLOCSubclass(code);
+        String lsc = locMan.getLOCDescription(code);
         Log.i("Set LOC Class Labels", lc+", "+lsc);
         classText.setText(lc);
         subclassText.setText(lsc);
     }
 
     public void generateNewLOCCode(){
-        for(int i = 0; i < lines.length; i++){
-            if(!lines[i].isLocked){
-                switch(i){
-                    //Line 1
-                    case 0:
-                        String locCode = locMan.getRandomCode();
-                        lines[i].line.setText(locCode);
-                        setLocLabels(locCode);
-                        break;
-                    //Line 2
-                    case 1:
-                        String range = locMan.getRandomRange(lines[0].line.getText().toString());
-                        if(range != null){
-                            lines[i].line.setText(range);
-                        }
-                        break;
-                    //Line 3
-                    case 2:
-                        String author = locMan.getRandomAuthor();
-                        lines[i].line.setText(author);
-                        break;
-                    //Line 4
-                    case 3:
-                        String year = locMan.getRandomYear();
-                        lines[i].line.setText(year);
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
+        LocCode newCode = lines[0].isLocked ? locMan.getRandomCode(lines[0].getLineText()) : locMan.getRandomCode();
+        String code = newCode.getLocClass();
+        setLocLabels(code);
+
+        float subd_f = newCode.getSubdivision();
+        String format = subd_f == (int)subd_f ? "%.0f" : "%.2f";
+
+        lines[0].setLineText(newCode.getLocClass());
+        lines[1].setLineText(String.format(format, newCode.getSubdivision()));
+        lines[2].setLineText(newCode.getCutter1().toString());
+        lines[3].setLineText(Integer.toString(newCode.getYear()));
     }
 }

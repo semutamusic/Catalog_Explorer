@@ -1,26 +1,22 @@
 package com.example.libraryToolbox;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
-import android.widget.SeekBar;
-import android.widget.TextView;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class LOCIndex extends AppCompatActivity {
 
     ImageButton backButton;
     LOCManager locMan;
     ScrollView indexScrollable;
-    SeekBar indexSeekbarSeekbar;
-    TextView classLetterText, classNameText, indexScrollableText;
-    Map<String, indexListing> indexTexts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +26,10 @@ public class LOCIndex extends AppCompatActivity {
         locMan = LOCManager.getInstance(this);
 
         backButton = (ImageButton) findViewById(R.id.locInd_back_button);
-        indexSeekbarSeekbar = (SeekBar) findViewById(R.id.locInd_indexSeekbar_seekbar);
-        classLetterText = (TextView) findViewById(R.id.locInd_classLetter_text);
-        classNameText = (TextView) findViewById(R.id.locInd_className_text);
-        indexScrollableText = (TextView) findViewById(R.id.locInd_index_scrollableText);
         indexScrollable = (ScrollView) findViewById(R.id.locInd_index_scrollable);
+
+        TieredConstraintLayout topTierLayout = new TieredConstraintLayout(this, locMan.getRoot());
+        indexScrollable.addView(topTierLayout);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,53 +37,54 @@ public class LOCIndex extends AppCompatActivity {
                 finish();
             }
         });
-
-        indexSeekbarSeekbar.setMax(locMan.getLOCString().length()-1);
-
-        indexSeekbarSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                displayIndexListings(i);
-                indexScrollable.scrollTo(0, 0);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) { }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) { }
-        });
-
-        indexTexts = new HashMap<>();
-
-        for(int i = 0; i < indexSeekbarSeekbar.getMax()+1; i++){
-            String classCode = Character.toString(locMan.getLOCString().charAt(i));
-            List<String> codes = locMan.getAllCodesWithPrefix(classCode);
-            indexListing il = new indexListing(locMan.getLOCClass(codes.get(0)));
-            for(String c : codes){
-                il.listings += '\n' + c + " - " + locMan.getLOCSubclass(c) + '\n';
-            }
-            indexTexts.put(classCode, il);
-        }
-
-        displayIndexListings(indexSeekbarSeekbar.getProgress());
-    }
-
-    public void displayIndexListings(int ind){
-        String classCode = Character.toString(locMan.getLOCString().charAt(ind));
-        indexListing il = indexTexts.get(classCode);
-
-        classLetterText.setText(classCode);
-        classNameText.setText(il.name);
-        indexScrollableText.setText(il.listings);
     }
 }
 
-class indexListing {
-    public String name;
-    public String listings = "";
+class TieredConstraintLayout extends ConstraintLayout{
+    public TieredConstraintLayout(Context context, LocClass lc){
+        super(context);
 
-    public indexListing(String n){
-        name = n;
+        //Initialize LayoutParams
+        setId(View.generateViewId());
+        ViewGroup.LayoutParams layoutParams =
+                new ViewGroup.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT
+                );
+        setLayoutParams(layoutParams);
+
+        //Initialize ConstraintSet
+        ConstraintSet constraintSet = new ConstraintSet();
+        constraintSet.clone(this);
+
+        listOfButtons(context, constraintSet, lc);
+
+        //Render ConstraintSet
+        constraintSet.applyTo(this);
+    }
+
+    void listOfButtons(Context context, ConstraintSet constraintSet, LocClass lc){
+        int lastId = -1;
+        for(int i = 0; i < lc.getSubclasses().size(); i++) {
+            Button newButton = new Button(context);
+            newButton.setId(View.generateViewId());
+            newButton.setText(lc.getSubclasses().get(i).toString());
+            newButton.setTextAlignment(TEXT_ALIGNMENT_TEXT_START);
+            addView(newButton);
+
+            constraintSet.constrainWidth(newButton.getId(), ConstraintSet.MATCH_CONSTRAINT);
+            constraintSet.constrainHeight(newButton.getId(), ConstraintSet.WRAP_CONTENT);
+
+            constraintSet.connect(newButton.getId(), ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START);
+            constraintSet.connect(newButton.getId(), ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END);
+            if(lastId < 0) {
+                constraintSet.connect(newButton.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 15);
+            }
+            else{
+                constraintSet.connect(newButton.getId(), ConstraintSet.TOP, lastId, ConstraintSet.BOTTOM, 15);
+            }
+
+            lastId = newButton.getId();
+        }
     }
 }

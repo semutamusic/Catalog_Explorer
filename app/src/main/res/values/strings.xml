@@ -28,7 +28,7 @@
     <!--Guessing Game Strings-->
     <string name="guess_header">LOC Class Guessing Game</string>
     <string name="guess_score_default">0 / 0 (0%)</string>
-    <string name="guess_hint_default">AA</string>
+    <string name="guess_hint_default">AC</string>
     <string name="guess_option_default">Option not found</string>
 
     <!--LOC Generator Strings-->

@@ -5,7 +5,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -50,16 +49,16 @@ public class GameGuess extends AppCompatActivity {
         gameHintText = (TextView) findViewById(R.id.guess_gameHint_text);
 
         for(int i = 0; i < 3; i++){
-            final int i_f = i;
-            buttonOptions[i_f] = new ButtonOption();
-            buttonOptions[i_f].button = (ImageButton) findViewById(getResources().getIdentifier("guess_gameOption"+(i+1)+"_button", "id", getPackageName()));
-            buttonOptions[i_f].text = (TextView) findViewById(getResources().getIdentifier("guess_gameOption" + (i+1) + "_buttonText", "id", getPackageName()));
-            buttonOptions[i_f].isCorrect = false;
+            final int IND = i;
+            buttonOptions[IND] = new ButtonOption();
+            buttonOptions[IND].button = (ImageButton) findViewById(getResources().getIdentifier("guess_gameOption"+(i+1)+"_button", "id", getPackageName()));
+            buttonOptions[IND].text = (TextView) findViewById(getResources().getIdentifier("guess_gameOption" + (i+1) + "_buttonText", "id", getPackageName()));
+            buttonOptions[IND].isCorrect = false;
 
-            buttonOptions[i_f].button.setOnClickListener(new View.OnClickListener() {
+            buttonOptions[IND].button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    processAnswer(buttonOptions[i_f].button, buttonOptions[i_f].isCorrect);
+                    processAnswer(buttonOptions[IND].button, buttonOptions[IND].isCorrect);
                 }
             });
         }
@@ -95,20 +94,23 @@ public class GameGuess extends AppCompatActivity {
     }
 
     void setNewChoices(){
-        String locClass = "E";
-        while(locClass.equals("E") || locClass.equals("F") || locClass.equals("Z")){
-            locClass = locMan.getRandomCodePrefix("", 1);
+        LocClass locClassNode;
+        do{
+            locClassNode = locMan.getRandomNodeWithPrefix("", 1);
         }
+        while(locClassNode.getSubclasses().size() < 3);
+        String locClass = locClassNode.getSubclass();
+
         String[] locSubclasses = new String[3];
         int correctAnswer = rand.nextInt(3);
         for(int i = 0; i < locSubclasses.length; i++){
             String newSubclass;
             do{
-                newSubclass = locMan.getRandomCodePrefix(locClass, 2);
+                newSubclass = locMan.getRandomNodeWithPrefix(locClass, 2).getSubclass();
             }
             while(arrayDoesContain(locSubclasses, newSubclass));
             locSubclasses[i] = newSubclass;
-            buttonOptions[i].text.setText(locMan.getLOCSubclass(newSubclass));
+            buttonOptions[i].text.setText(locMan.getLOCDescription(newSubclass));
             buttonOptions[i].isCorrect = false;
             if(i == correctAnswer){
                 buttonOptions[i].isCorrect = true;
