@@ -5,207 +5,91 @@
     android:id="@+id/guess_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_paper_2"
-    tools:context=".GameGuess">
+    android:background="@drawable/background_paper_aged"
+    tools:context=".GameGuessActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/guess_newGame_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/guess_newGame_button"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/guess_newGame_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <ImageButton
-            android:id="@+id/guess_newGame_button"
-            android:layout_width="200dp"
-            android:layout_height="90dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <TextView
-            android:id="@+id/guess_newGame_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_newGame"
-            android:textAppearance="@style/button_2"
-            app:layout_constraintBottom_toBottomOf="@id/guess_newGame_button"
-            app:layout_constraintEnd_toEndOf="@id/guess_newGame_button"
-            app:layout_constraintStart_toStartOf="@id/guess_newGame_button"
-            app:layout_constraintTop_toTopOf="@id/guess_newGame_button" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/guess_back_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/guess_back_button"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/app_back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageButton
-            android:id="@+id/guess_back_button"
-            android:layout_width="150dp"
-            android:layout_height="90dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <TextView
-            android:id="@+id/guess_back_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_back"
-            android:textAppearance="@style/button_2"
-            app:layout_constraintBottom_toBottomOf="@id/guess_back_button"
-            app:layout_constraintEnd_toEndOf="@id/guess_back_button"
-            app:layout_constraintStart_toStartOf="@id/guess_back_button"
-            app:layout_constraintTop_toTopOf="@id/guess_back_button" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:id="@+id/guess_header_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/guess_header_text"
+            android:id="@+id/guess_header1_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/guess_header"
-            android:textAppearance="@style/header_2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="0dp"
+            android:text="@string/guess_header1_def"
+            android:textAppearance="@style/header_2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/guess_score_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guess_header_layout">
+        <TextView
+            android:id="@+id/guess_header2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/guess_header2"
+            android:textAppearance="@style/header_2" />
 
         <TextView
             android:id="@+id/guess_score_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/guess_score_default"
-            android:textAppearance="@style/header_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textAppearance="@style/header_2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/guess_gameHint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guess_hint_default"
+        android:textAppearance="@style/content_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess_header_layout"
+        app:layout_constraintBottom_toTopOf="@id/guess_game_layout"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/guess_game_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guess_back_layout"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/guess_back_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guess_score_layout">
-
-        <ImageButton
-            android:id="@+id/guess_gameOption1_button"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="50dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guess_gameHint_text"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/guess_gameOption2_button"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guess_gameOption1_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/guess_gameOption3_button"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guess_gameOption2_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <TextView
-            android:id="@+id/guess_gameOption3_buttonText"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/guess_option_default"
-            android:textAlignment="center"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/guess_gameOption3_button"
-            app:layout_constraintEnd_toEndOf="@id/guess_gameOption3_button"
-            app:layout_constraintStart_toStartOf="@id/guess_gameOption3_button"
-            app:layout_constraintTop_toTopOf="@id/guess_gameOption3_button" />
-
-        <TextView
-            android:id="@+id/guess_gameHint_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/guess_hint_default"
-            android:textAppearance="@style/content_3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/guess_gameOption2_buttonText"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/guess_option_default"
-            android:textAlignment="center"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/guess_gameOption2_button"
-            app:layout_constraintEnd_toEndOf="@id/guess_gameOption2_button"
-            app:layout_constraintStart_toStartOf="@id/guess_gameOption2_button"
-            app:layout_constraintTop_toTopOf="@id/guess_gameOption2_button" />
-
-        <TextView
-            android:id="@+id/guess_gameOption1_buttonText"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/guess_option_default"
-            android:textAlignment="center"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/guess_gameOption1_button"
-            app:layout_constraintEnd_toEndOf="@id/guess_gameOption1_button"
-            app:layout_constraintStart_toStartOf="@id/guess_gameOption1_button"
-            app:layout_constraintTop_toTopOf="@id/guess_gameOption1_button" />
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/guess_gameWrong_image"
+            android:contentDescription="@string/guess_wrongAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -215,12 +99,49 @@
 
         <ImageView
             android:id="@+id/guess_gameRight_image"
+            android:contentDescription="@string/guess_rightAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
             app:layout_constraintBottom_toBottomOf="@id/guess_gameOption1_button"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/stamp_yes" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/guess_gameOption1_button"
+            style="@style/button"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/guess_option_default"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/guess_gameOption2_button"
+            style="@style/button"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/guess_option_default"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guess_gameOption1_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/guess_gameOption3_button"
+            style="@style/button"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/guess_option_default"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guess_gameOption2_button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

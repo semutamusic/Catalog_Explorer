@@ -1,10 +1,26 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.LOCGenerator" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CatalogExplorer" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">#FF000000</item>
+        <item name="colorPrimary">@color/backgroundGreen</item>
     </style>
 
-    <style name="Theme.LOCGenerator" parent="Base.Theme.LOCGenerator" />
+    <style name="Theme.CatalogExplorer" parent="Base.Theme.CatalogExplorer" />
+
+    <style name="Theme.AppCompat.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+        duration. -->
+        <item name="windowSplashScreenBackground">@color/backgroundGreen</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splashicon</item>
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.CatalogExplorer</item>
+    </style>
 </resources>

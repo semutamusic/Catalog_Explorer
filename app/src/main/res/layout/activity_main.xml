@@ -5,286 +5,109 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_paper_2"
+    android:background="@drawable/background_paper_aged"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:id="@+id/main_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_header1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_header1"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_1" />
+
+        <TextView
+            android:id="@+id/main_header2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/main_header2"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_2" />
+
+        <TextView
+            android:id="@+id/main_header3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_header3"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_1" />
+
+        <LinearLayout
+            android:id="@+id/main_spinner_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <Spinner
+                android:id="@+id/main_header4_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_help_button"
+                style="@style/button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/main_helpButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/main_menu_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_header_layout">
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_browse_button"
+            style="@style/button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="@string/main_browseButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_searchCode_button"
+            style="@style/button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/main_searchCodeButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_searchKeyword_button"
+            style="@style/button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/main_searchKeywordButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/main_guess_button"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_guessHelp_button"
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="@id/main_guess_button"
-            app:layout_constraintStart_toEndOf="@id/main_guess_button"
-            app:layout_constraintTop_toTopOf="@id/main_guess_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_locGen_button"
+            style="@style/button"
             android:layout_width="300dp"
             android:layout_height="80dp"
             android:layout_marginTop="25dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/main_guess_button"
-            app:srcCompat="@drawable/tapebutton2" />
+            android:text="@string/main_guessButton" />
 
-        <ImageButton
-            android:id="@+id/main_locGenHelp_button"
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="@id/main_locGen_button"
-            app:layout_constraintStart_toEndOf="@id/main_locGen_button"
-            app:layout_constraintTop_toTopOf="@id/main_locGen_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_ficGen_button"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="25dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/main_locGen_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_ficGenHelp_button"
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="@id/main_ficGen_button"
-            app:layout_constraintStart_toEndOf="@id/main_ficGen_button"
-            app:layout_constraintTop_toTopOf="@id/main_ficGen_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_locInd_button"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="25dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/main_ficGen_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <ImageButton
-            android:id="@+id/main_locIndHelp_button"
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:background="@null"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="@id/main_locInd_button"
-            app:layout_constraintStart_toEndOf="@id/main_locInd_button"
-            app:layout_constraintTop_toTopOf="@id/main_locInd_button"
-            app:srcCompat="@drawable/tapebutton2" />
-
-        <TextView
-            android:id="@+id/main_guessHelp_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_help"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_guessHelp_button"
-            app:layout_constraintEnd_toEndOf="@id/main_guessHelp_button"
-            app:layout_constraintStart_toStartOf="@id/main_guessHelp_button"
-            app:layout_constraintTop_toTopOf="@id/main_guessHelp_button" />
-
-        <TextView
-            android:id="@+id/main_guess_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_guessButton"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_guess_button"
-            app:layout_constraintEnd_toEndOf="@id/main_guess_button"
-            app:layout_constraintStart_toStartOf="@id/main_guess_button"
-            app:layout_constraintTop_toTopOf="@id/main_guess_button" />
-
-        <TextView
-            android:id="@+id/main_locGenHelp_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_help"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_locGenHelp_button"
-            app:layout_constraintEnd_toEndOf="@id/main_locGenHelp_button"
-            app:layout_constraintStart_toStartOf="@id/main_locGenHelp_button"
-            app:layout_constraintTop_toTopOf="@id/main_locGenHelp_button" />
-
-        <TextView
-            android:id="@+id/main_ficGenHelp_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_help"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_ficGenHelp_button"
-            app:layout_constraintEnd_toEndOf="@id/main_ficGenHelp_button"
-            app:layout_constraintStart_toStartOf="@id/main_ficGenHelp_button"
-            app:layout_constraintTop_toTopOf="@id/main_ficGenHelp_button" />
-
-        <TextView
-            android:id="@+id/main_locGen_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_locGenButton"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_locGen_button"
-            app:layout_constraintEnd_toEndOf="@id/main_locGen_button"
-            app:layout_constraintStart_toStartOf="@id/main_locGen_button"
-            app:layout_constraintTop_toTopOf="@id/main_locGen_button" />
-
-        <TextView
-            android:id="@+id/main_ficGen_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_ficGenButton"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_ficGen_button"
-            app:layout_constraintEnd_toEndOf="@id/main_ficGen_button"
-            app:layout_constraintStart_toStartOf="@id/main_ficGen_button"
-            app:layout_constraintTop_toTopOf="@id/main_ficGen_button" />
-
-        <TextView
-            android:id="@+id/main_locInd_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_locIndButton"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_locInd_button"
-            app:layout_constraintEnd_toEndOf="@id/main_locInd_button"
-            app:layout_constraintStart_toStartOf="@id/main_locInd_button"
-            app:layout_constraintTop_toTopOf="@id/main_locInd_button" />
-
-        <TextView
-            android:id="@+id/main_locIndHelp_buttonText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_help"
-            android:textAppearance="@style/button_1"
-            app:layout_constraintBottom_toBottomOf="@id/main_locIndHelp_button"
-            app:layout_constraintEnd_toEndOf="@id/main_locIndHelp_button"
-            app:layout_constraintStart_toStartOf="@id/main_locIndHelp_button"
-            app:layout_constraintTop_toTopOf="@id/main_locIndHelp_button" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main_header_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/main_header1_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/main_header1"
-            android:textAlignment="center"
-            android:textAppearance="@style/header_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/main_header2_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="0sp"
-            android:text="@string/main_header2"
-            android:textAlignment="center"
-            android:textAppearance="@style/header_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_header1_text" />
-
-        <TextView
-            android:id="@+id/main_header3_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/main_header3"
-            android:textAlignment="center"
-            android:textAppearance="@style/header_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_header2_text" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main_help_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/main_help_image"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:scaleType="fitXY"
-            android:scaleX="1"
-            android:scaleY="1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/layout_paper" />
-
-        <TextView
-            android:id="@+id/main_helpTitle_text"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textAlignment="center"
-            android:textAppearance="@style/content_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/main_help_image" />
-
-        <TextView
-            android:id="@+id/main_help_text"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textAppearance="@style/content_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_helpTitle_text" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

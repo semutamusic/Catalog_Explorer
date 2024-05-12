@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Library Toolbox"
+rootProject.name = "Catalog Explorer"
 include ':app'

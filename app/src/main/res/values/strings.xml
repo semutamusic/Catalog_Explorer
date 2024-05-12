@@ -1,51 +1,61 @@
 <resources>
     <!--General Strings-->
-    <string name="app_name">Library Toolbox</string>
-
+    <string name="app_name">Catalog Explorer</string>
     <string name="app_back">Back</string>
-    <string name="app_newGame">New Game</string>
-
-    <string name="default_class">Class Not Found</string>
-    <string name="default_subclass">Subclass Not Found</string>
-    <string name="default_author">Author Not Found</string>
 
     <!--Main Activity Strings-->
     <string name="main_header1">Krathman\'s</string>
-    <string name="main_header2">Library Toolbox</string>
-    <string name="main_header3">Collection of Library Gizmos</string>
+    <string name="main_header2">Catalog Explorer</string>
+    <string name="main_header3">Collection of Library Catalogs</string>
 
+    <string-array name="main_manager_choices">
+        <item>Library of Congress</item>
+        <item>Dewey Decimal System</item>
+        <item>Classical Authors</item>
+    </string-array>
+
+    <string name="main_browseButton">Browse</string>
+    <string name="main_searchCodeButton">Search By Code</string>
+    <string name="main_searchKeywordButton">Search By Keyword</string>
     <string name="main_guessButton">Guessing Game</string>
-    <string name="main_locGenButton">Random LOC Generator</string>
-    <string name="main_ficGenButton">Random Fiction Generator</string>
-    <string name="main_locIndButton">LOC Index</string>
+    <string name="main_helpButton">\?</string>
 
-    <string name="main_help">\?</string>
-    <string name="main_guessHelp">Guess which Library of Congress subclass goes with each code! If you look on the shelves of your local library, you may get a hint or two.</string>
-    <string name="main_locGenHelp">This tool generates random Library of Congress codes. Tap the Post-It to generate a new code, or tap any of the four pieces to input a custom code, locking it. Tap the Reset Locks button on the bottom to remove any locks you\'ve placed.</string>
-    <string name="main_ficGenHelp">This tool randomly generates the last name of a popular fiction author. We\'re pretty clumsy, and might spill some ink on the name, but I\'m sure lots of good authors have similar last names!</string>
-    <string name="main_locIndHelp">This tool lists all the Library of Congress subclasses in one place for easy browsing. Slide the lens on the left up or down to select a different class!</string>
+    <!--Help Strings-->
+    <string name="help_header1_def">[DEFAULT]</string>
+    <string name="help_header2">Catalog Info</string>
 
     <!--Guessing Game Strings-->
-    <string name="guess_header">LOC Class Guessing Game</string>
+    <string name="guess_header1_def">[DEFAULT]</string>
+    <string name="guess_header2">Catalog Guessing Game</string>
     <string name="guess_score_default">0 / 0 (0%)</string>
-    <string name="guess_hint_default">AC</string>
+    <string name="guess_hint_default">[DEFAULT]</string>
     <string name="guess_option_default">Option not found</string>
+    <string name="guess_newGame_button">New Game</string>
+    <string name="guess_rightAnswer">Right Answer</string>
+    <string name="guess_wrongAnswer">Wrong Answer</string>
 
-    <!--LOC Generator Strings-->
-    <string name="locGen_header1">Random</string>
-    <string name="locGen_header2">Library Of Congress</string>
-    <string name="locGen_header3">Code Generator</string>
+    <!--Search Code Strings-->
+    <string name="searchCode_header1">Search</string>
+    <string name="searchCode_header2_def">[DEFAULT] Catalog</string>
+    <string name="searchCode_header2_ext">\nCatalog</string>
+    <string name="searchCode_header3">By Code</string>
+    <string name="searchCode_randomize_button">Randomize</string>
+    <string name="searchCode_clear_button">Clear</string>
+    <string name="searchCode_result_def">No result found</string>
 
-    <string name="locGen_line1_default">AA</string>
-    <string name="locGen_line2_default">0000</string>
-    <string name="locGen_line3_default">.A000</string>
-    <string name="locGen_line4_default">1900</string>
+    <!--Search Keyword Strings-->
+    <string name="searchKeyword_header1">Search</string>
+    <string name="searchKeyword_header2_def">[DEFAULT] Catalog</string>
+    <string name="searchKeyword_header2_ext">\nCatalog</string>
+    <string name="searchKeyword_header3">By Keyword</string>
+    <string name="searchKeyword_searchHint">Keyword</string>
 
-    <!--Fiction Generator Strings-->
-    <string name="ficGen_header1">Random</string>
-    <string name="ficGen_header2">Fiction</string>
-    <string name="ficGen_header3">Author Generator</string>
+    <string name="searchKeyword_clear_button">Clear</string>
+    <string name="searchKeyword_noResults_text">No results found</string>
 
-    <!--LOC Index Strings-->
-    <string name="locInd_header">Library of Congress Index</string>
+    <string name="searchKeyword_keywordTooShort_text">Keywords too short, must be at least 3 letters long</string>
+    <string name="browser_header_def">[DEFAULT] Catalog</string>
+
+    <!--Browser Strings-->
+    <string name="browser_header_ext">:\nBrowsable Catalog</string>
 </resources>

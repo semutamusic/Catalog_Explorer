@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchCode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_paper_aged"
+    tools:context=".SearchCodeActivity">
+
+    <LinearLayout
+        android:id="@+id/searchCode_focusCatcher_layout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <LinearLayout
+        android:id="@+id/searchCode_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/searchCode_header1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searchCode_header1"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_1" />
+
+        <TextView
+            android:id="@+id/searchCode_header2_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/searchCode_header2_def"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_2" />
+
+        <TextView
+            android:id="@+id/searchCode_header3_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searchCode_header3"
+            android:textAlignment="center"
+            android:textAppearance="@style/header_1" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchCode_back_button"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/app_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/searchCode_randomize_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchCode_randomize_button"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/searchCode_randomize_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/searchCode_back_button"
+        app:layout_constraintEnd_toStartOf="@id/searchCode_clear_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchCode_clear_button"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/searchCode_clear_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/searchCode_randomize_button"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/searchCode_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchCode_header_layout">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/searchCode_resultBackground"
+        android:contentDescription="@null"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchCode_result_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchCode_result_layout"
+        app:srcCompat="@drawable/background_paper_white" />
+
+    <LinearLayout
+        android:id="@+id/searchCode_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/searchCode_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchCode_field_layout">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

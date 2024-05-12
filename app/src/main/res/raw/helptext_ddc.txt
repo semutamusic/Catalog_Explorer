@@ -1,0 +1,8 @@
+    The Dewey Decimal Classification (or Dewey Decimal System) is a library classification system designed by Melvil Dewey in 1876 and maintained by OCLC. It sorts topics into ten major classes, and hierarchically divides into more specific subclasses with a 3-digit whole number, and an added decimal for a more precise division. Cutter numbers and publication years are used to distinguish between specific books.
+
+523   (Class)
+.43   (Division)
+.R84  (Cutter number)
+2024  (Year)
+
+    The complete Dewey Decimal schedule can be found on the OCLC website. For this app, only the whole-number subdivisions are used.

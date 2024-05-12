@@ -1,0 +1,10 @@
+    The Library of Congress Classification was developed in 1897 to organize the Library of Congress' collection. It is divided into 21 single-letter classes, or topics, which are further divided into subclasses and subdivisions. Books within the same subclass can be distinguished with Cutter numbers and publication years.
+
+QB     (Class)
+639   (Subdivision)
+.R84  (Cutter number)
+2024  (Publication year)
+
+    The Library of Congress offers a paid service called Classification Web to search their classification in greater detail, as well as a free distribution page that offers the classification in PDF format, called FreeLCC.
+
+    FreeLCC describes the classes in three levels of detail: the Preface offers a broad overview of what the class contains, the Outline provides a general description of how the class is broken up, and the Text details precisely how a topic can be cataloged within that class. The information in this app uses FreeLCC's Outline documents.
