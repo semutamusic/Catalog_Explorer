@@ -21,7 +21,7 @@ public class LccManager extends CatalogManager<LccNode>{
                 context,
                 new LccNode(new LccCode(), new LccCode(), "Root"),
                 0,
-                R.raw.loc_complete,
+                R.raw.lcc_complete,
                 R.raw.helptext_lcc
         );
         //printTree();
